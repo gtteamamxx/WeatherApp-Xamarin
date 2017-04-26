@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="weatherxamarin.Views.StartPage"
+             x:Name="Page"
+             xmlns:b="clr-namespace:weatherxamarin.Behaviors"
+             xmlns:vm="clr-namespaceCorcav.Behaviors:weatherxamarin.ViewModels">
+
+    <Grid>
+        <Image Source="background.png"
+               Aspect="AspectFill" />
+
+        <Grid>
+            <Image Source="timeswip.png"
+                   Aspect="Fill">
+                <Image.Behaviors>
+                    <b:TimeSwipAnimationBehavior />
+                </Image.Behaviors>
+            </Image>
+        </Grid>
+        
+        <Image Source="menubottom.png"
+               Aspect="Fill"
+               Margin="-2,0,0,0"
+               BackgroundColor="Transparent" />
+      
+    </Grid>
+</ContentPage>
